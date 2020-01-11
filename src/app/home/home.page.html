@@ -1,0 +1,58 @@
+<ion-header no-border>
+  <ion-toolbar color="">
+    <ion-buttons slot="start">
+        <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-img src="../../assets/netflix.svg" class="logo"></ion-img>
+      <ion-buttons slot="end">
+        <ion-button>
+          <ion-icon name="search"></ion-icon>
+        </ion-button>
+      </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content ion-padding>
+  <ion-item lines="none">
+    <p slot="start">TV shows</p>
+      <ion-icon name="arrow-forward" slot="end"></ion-icon>
+  </ion-item>
+
+  <ion-slides [options]="SlidesOptions">
+    <ion-slide>
+      <ion-card [style.backgroundImage]="'url(../../assets/flash.jpg)'" class="poster1"></ion-card>
+    </ion-slide>
+    <ion-slide>
+      <ion-card [style.backgroundImage]="'url(../../assets/arrow.jpg)'" class="poster1"></ion-card>
+    </ion-slide>
+    <ion-slide>
+      <ion-card [style.backgroundImage]="'url(../../assets/thefamilyman.jpg)'" class="poster1"></ion-card>
+    </ion-slide>
+    <ion-slide>
+      <ion-card [style.backgroundImage]="'url(../../assets/suits.jpg)'" class="poster1"></ion-card>
+    </ion-slide>
+  </ion-slides>
+
+
+
+
+  <ion-item lines="none">
+    <p slot="start">movies</p>
+      <ion-icon name="arrow-forward"></ion-icon>
+  </ion-item>
+
+  <ion-slides [options]="SlidesOptions">
+    <ion-slide>
+      <ion-card [style.backgroundImage]="'url(../../assets/tanhaji.jpg)'" class="poster1"></ion-card>
+    </ion-slide>
+    <ion-slide>
+      <ion-card [style.backgroundImage]="'url(../../assets/dora.jpg)'" class="poster1"></ion-card>
+    </ion-slide>
+    <ion-slide>
+      <ion-card [style.backgroundImage]="'url(../../assets/kid.jpg)'" class="poster1"></ion-card>
+    </ion-slide>
+    <ion-slide>
+      <ion-card [style.backgroundImage]="'url(../../assets/jumanji.jpg)'" class="poster1"></ion-card>
+    </ion-slide>
+  </ion-slides>
+</ion-content>
